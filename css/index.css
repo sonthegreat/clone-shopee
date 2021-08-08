@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: #ee4d2d;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.container--product {
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container--favourite {
+  width: 20%;
+}
+
+.container__title-text {
+  width: 10%;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  background: #ee4d2d;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  position: relative;
+  z-index: 9;
+}
+
+.container__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__title-border {
+  width: 75%;
+  border-bottom: 2px dotted gainsboro;
+  position: absolute;
+}
+
+.product {
+  padding: 2px;
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* margin: 0px 15px; */
+  outline: 2px solid gainsboro;
+  box-shadow: 2px 4px 2px 1px grey;
+}
+
+.container__product {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+
+img.product__img {
+  width: 100%;
+  height: auto;
+}
+
+.product__title {
+  font-size: 17px;
+  padding-left: 2px;
+}
+
+.product__price {
+  display: flex;
+  color: var(--main-color);
+  align-items: baseline;
+  margin: 10px 0px;
+}
+
+p.product__price-vnd {
+  font-size: 10px;
+  padding-right: 2px;
+}
+
+p.product__price-number {
+  font-size: 17px;
+}
+
+p.product__price-- {
+  padding: 0px 4px;
+}
+
+.product__footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+i.product__footer-left.far.fa-heart {
+  font-size: 13px;
+  padding-left: 2px;
+}
+
+.product__footer-right {
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.product__footer-right-rate {
+  font-size: 10px;
+  color: #e1aa29;
+  padding-right: 5px;
+}
+
+.product__footer-right-sold {
+  font-size: 13px;
+}
+
+.container__favourite-title {
+  text-align: center;
+  font-size: 25px;
+  color: var(--main-color);
+  margin-top: 35px;
+}
